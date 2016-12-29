@@ -13,7 +13,7 @@ def main():
         print 'No input text found. Use this script from the share sheet in an app like Notes.'
         return
     name = os.path.basename(text)
-    with open(text) as t:
+    with open(text, 'a') as t:
         t.write(text)
     print 'SAVE %s.py to importfile OK !' % name
 
